@@ -338,7 +338,9 @@ let g:deoplete#enable_camel_case = 1                                            
 
 let g:delimitMate_expand_cr = 1                                                 "auto indent on enter
 
-let g:ale_linters = {'javascript': ['eslint']}                                  "Lint js with eslint
+let g:ale_linters = {'javascript': ['eslint'],
+      \ 'python': ['autopep8']
+      \}                                  "Lint js with eslint
 let g:ale_fixers = {'javascript': ['prettier', 'eslint']}                       "Fix eslint errors
 let g:ale_javascript_prettier_options = '--print-width 100'                     "Set max width to 100 chars for prettier
 let g:ale_lint_on_save = 1                                                      "Lint when saving a file
