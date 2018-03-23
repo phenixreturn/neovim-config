@@ -25,7 +25,8 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'kristijanhusak/vim-js-file-import'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'tyrannicaltoucan/vim-quantum'
-
+" Grammer checker in vim
+Plug 'dpelle/vim-LanguageTool'
 call plug#end()
 "}}}
 " ================ General Config ==================== {{{
@@ -245,7 +246,7 @@ inoremap jj <Esc>
 tnoremap <Leader>jj <C-\><C-n>
 
 " Yank to the end of the line
-nnoremap Y y$
+" nnoremap Y y$
 
 " Copy to system clipboard
 vnoremap <C-c> "+y
