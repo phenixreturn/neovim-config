@@ -10,8 +10,10 @@ and submit a pull request if you found any bug.
 Installation
 -----------
 
-    $ git clone https://github.com/kristijanhusak/neovim-config.git ~/neovim-config
+    $ git clone -b robin https://github.com/phenixreturn/neovim-config.git ~/neovim-config
     $ cd ~/neovim-config
+    
+    TODO
     $ chmod +x ./install.sh
     $ ./install.sh
     $ nvim
