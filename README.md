@@ -9,6 +9,7 @@ and submit a pull request if you found any bug.
 
 Installation
 -----------
+I am using bash. The original repository is not directly for my needs. Therefore. I do the customizatoin for myself. 
 
     $ git clone -b robin https://github.com/phenixreturn/neovim-config.git ~/neovim-config
     $ cd ~/neovim-config
