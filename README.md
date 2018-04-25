@@ -12,12 +12,15 @@ Installation
 
     $ git clone -b robin https://github.com/phenixreturn/neovim-config.git ~/neovim-config
     $ cd ~/neovim-config
-    
+    $ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    $ ln -s ./init.vim ~/.config/nvim/
+
     TODO
     $ chmod +x ./install.sh
     $ ./install.sh
     $ nvim
     $ :UpdateRemotePlugins
+    
 
 Plugins
 ----------------
