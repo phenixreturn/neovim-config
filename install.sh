@@ -1,8 +1,9 @@
 #/bin/sh
+mkdir ~/.fonts
 rm -rf ~/.config/nvim ~/.tmux.conf ~/.zshrc ~/.oh-my-zsh ~/.fonts/iosevka* \
 && cp $(pwd)/fonts/* ~/.fonts/ \
 && curl -L https://github.com/BurntSushi/ripgrep/releases/download/0.7.1/ripgrep-0.7.1-x86_64-unknown-linux-musl.tar.gz | tar zx \
-&& cp ripgrep-0.7.1-x86_64-unknown-linux-musl/rg /usr/local/bin \
+&& sudo cp ripgrep-0.7.1-x86_64-unknown-linux-musl/rg /usr/local/bin \
 && rm -rf ripgrep-0.7.1-x86_64-unknown-linux-musl \
 && curl -fLo ~/z.sh https://raw.githubusercontent.com/rupa/z/master/z.sh \
 && curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim \
@@ -22,3 +23,7 @@ rm -rf ~/.config/nvim ~/.tmux.conf ~/.zshrc ~/.oh-my-zsh ~/.fonts/iosevka* \
 && mkdir -p ~/.oh-my-zsh/custom/themes \
 && ln -s $(pwd)/cloud_kris.zsh-theme ~/.oh-my-zsh/custom/themes \
 && tic ./xterm-256color-italic.terminfo
+
+# Configuration of YoucompleteMe
+cd ~/.config/nvim/bundle/YouCompleteMe
+./install.py

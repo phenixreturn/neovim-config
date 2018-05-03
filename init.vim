@@ -1,6 +1,6 @@
 " ================ Plugins ==================== {{{
 call plug#begin( '~/.config/nvim/bundle')
-
+Plug 'Valloric/YouCompleteMe'
 Plug 'w0rp/ale', { 'do': 'npm install -g prettier' }
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'Raimondi/delimitMate'
@@ -159,7 +159,7 @@ set statusline+=\ \│\ %p%%                                                    
 set statusline+=\ \│\ %c                                                        "Column number
 set statusline+=\ \│\ %l/%L                                                     "Current line number/Total line numbers
 set statusline+=\ %{gutentags#statusline('\│\ ')}                               "Tags status
-set statusline+=\ %2*%{ALEGetStatusLine()}%*                                    "Errors count
+" set statusline+=\ %2*%{ALEGetStatusLine()}%*                                    "Errors count
 
 "}}}
 " ================ Abbreviations ==================== {{{
@@ -342,7 +342,7 @@ let g:delimitMate_expand_cr = 1                                                 
 let g:ale_linters = {'javascript': ['eslint'],
       \ 'python': ['autopep8']
       \}                                  "Lint js with eslint
-let g:ale_fixers = {'javascript': ['prettier', 'eslint']}                       "Fix eslint errors
+" let g:ale_fixers = {'javascript': ['prettier', 'eslint']}                       "Fix eslint errors
 let g:ale_javascript_prettier_options = '--print-width 100'                     "Set max width to 100 chars for prettier
 let g:ale_lint_on_save = 1                                                      "Lint when saving a file
 let g:ale_sign_error = '✖'                                                      "Lint error sign
