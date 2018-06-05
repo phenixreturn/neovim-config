@@ -80,7 +80,7 @@ silent! colorscheme quantum
 set noswapfile
 set nobackup
 set nowb
-
+set autoread
 " }}}
 " ================ Persistent Undo ================== {{{
 
